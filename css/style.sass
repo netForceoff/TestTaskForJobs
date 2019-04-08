@@ -1,0 +1,254 @@
+@import "reset"
+
+*
+	margin: 0
+	padding: 0
+
+html
+	font-size: 10px
+
+body
+	font-family: 'PT Sans Caption Bold', arial
+	font-size: 16px
+	input
+		border: none
+		outline: none
+
+.content
+	max-width: 1423px
+	margin: 0 auto
+	text-align: center
+.error_1, .error_2
+	color: red
+	display: none
+	position: absolute
+	top: -25px
+	width: 100%
+
+.direction-header-blocks
+	background: url('../img/background111.jpg') no-repeat
+	max-width: 1423px
+	min-height: 843px
+	&-top-text
+		&_one, &_two
+			color: #ffffff
+			text-transform: uppercase
+		&_one
+			display: flex
+			padding-top: 2.4rem
+			padding-left: 16.1rem
+			
+			p:first-child
+				margin-right: .7rem
+				font-weight: 700
+		&_two
+			margin-top: -1rem
+	&-main-text
+		margin-top: 12rem
+		font-size: 80px
+		color: #ffffff
+	&-domen
+		margin: 6.5rem auto 0 auto
+		position: relative
+		max-width: 723px
+		height: 125px
+		opacity: .9
+		border-radius: 7px 7px 0 0
+		
+		&-form
+			height: 80px
+			background: #ffffff
+			position: relative
+			z-index: 999
+			border-radius: 7px
+			line-height: 82.5px
+			input[type="text"]
+				max-width: 518px
+				font-size: 24px
+				width: 100%
+
+			input[type="submit"]
+				max-width: 156px
+				width: 100%
+				border-radius: 7px
+				height: 52px
+				background-color: #5f6062
+				border: none
+				color: #fff
+				font-size: 22px
+				cursor: pointer
+		&-text
+			line-height: 44px
+			position: absolute
+			display: none
+			width: 100%
+			top: 75px
+			background: #333333
+			color: #f4f7fb
+			&-block
+				margin-top: .5rem
+				display: flex
+				justify-content: center
+				a
+					color: #77b53c
+	&-create-account
+		margin-top: 3.5rem
+		input
+			max-width: 264px
+			width: 100%
+			height: 54px
+			font-size: 24px
+			color: #ffffff
+			background-color: #77b53c
+			border-radius: 5px
+			cursor: pointer
+	&-swap-bottom
+		margin-top: 13.8rem
+
+.rub
+	line-height: 25px
+	width: .4em
+	border-bottom: 5px solid #ffffff
+	display: inline-block
+
+.direction-main-blocks
+	&-top-text
+		display: flex
+		padding-top: 2.4rem
+		padding-left: 16.1rem
+		text-transform: uppercase
+		p:first-child
+				margin-right: .7rem
+				font-weight: 700
+				color: #b22725
+	&-header
+		margin-top: 6.2rem	
+		font-size: 35px
+		font-weight: 700
+	&-amenities
+		margin: 6.2rem auto 0 auto
+		display: flex
+		justify-content: space-around
+		cursor: pointer
+		max-width: 1092px
+		&-description
+			max-width: 1091px
+			position: relative
+			margin-left: 16.1rem
+			padding: 2rem 4.2rem 2rem 4.3rem
+			text-align: left
+			box-sizing: border-box
+			border: 2px solid rgba(95, 96, 98, 0.5)
+			background-color: #f7f7f7
+			border-radius: 7px
+			&:not(.active)
+				display: none
+
+			&::before
+				content: ''
+				position: absolute
+				top: -3px
+				left: 140px
+				background: #f7f7f7
+				width: 18px
+				height: 18px
+				border: 2px solid rgba(95, 96, 98, 0.5)
+				border-width: 2px 0 0 2px
+				transform: rotate(45deg) translate(-9px, -9px)
+				transform-origin: 0 0
+		&-transfer
+			max-width: 280px
+			width: 100%
+			p
+				font-size: 20px
+		img
+			margin-bottom: 2.1rem
+
+.block-description_1
+	&::before
+		left: 405px
+.block-description_2
+	&::before
+		left: 685px
+.block-description_3
+	&::before
+		left: 950px
+.tabsText_2
+	margin-top: 4rem
+.ametities-block_1
+	margin-bottom: 3rem
+.ametities-block_2
+	margin-top: 3rem
+.main-button
+	margin-bottom: 8.5rem
+
+.direction-footer-blocks
+	background: url('../img/background2.jpg')
+	max-width: 1423px
+	min-height: 843px
+	&-text-header_1
+		margin-top: 6.2rem
+		font-size: 35px
+		font-weight: 700
+		color: #ffffff
+	&-text-header_2
+		margin-top: 9.7rem
+		font-size: 50px
+		line-height: 60px
+		color: #ffffff
+	&-bonus-block
+		margin: 5.3rem auto 0 auto
+		box-sizing: border-box
+		display: flex
+		max-width: 1090px
+		min-height: 110px
+		border-radius: 5px
+		background: #df4a5e
+		&-text
+			padding: 3.3rem 0rem 3rem 3.8rem
+			text-align: left
+			font-size: 22px
+			color: #ffffff
+			margin-right: 7.4rem
+			span
+				font-weight: 700
+				&:nth-child(2)
+					font-weight: 400
+					border-bottom: 1px solid #fff
+		&-count
+			color: #ffffff
+			font-size: 50px
+			padding-top: 3rem
+			span:first-child
+				position: relative
+				margin-right: 1rem
+				&::before
+					content: ''
+					position: absolute
+					bottom: -2px
+					left: -37px
+					opacity: 0.2
+					width: 2px
+					height: 70px
+					background: #ffffff
+	&-copy
+		font-size: 13px
+		margin-top: 5rem
+		margin-right: 3rem
+		color: #ffffff
+		opacity: 0.5
+
+
+.footer-button
+	margin-top: 4.4rem
+
+@import "media"
+
+
+
+
+	
+
+
+
+	
